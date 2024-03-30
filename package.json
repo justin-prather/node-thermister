@@ -1,6 +1,9 @@
 {
   "name": "node-thermister",
   "module": "index.ts",
+  "exports": {
+    ".": "./index.js"
+  },
   "type": "module",
   "devDependencies": {
     "bun-types": "latest"

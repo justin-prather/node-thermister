@@ -146,8 +146,6 @@ function resistanceToDegreesF(resistance) {
   const degreesC = map(resistance, lower, upper, lowerDegrees["f"], upperDegrees["f"]);
   return degreesC;
 }
-console.log(resistanceToDegreesF(15852));
-console.log(resistanceToDegreesC(15852));
 export {
   resistanceToDegreesF,
   resistanceToDegreesC

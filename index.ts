@@ -11,7 +11,7 @@ export function resistanceToDegreesC(resistance: number): number {
 	return degreesC;
 }
 
-export function resistanceToDegreesF(resistance: number): number{
+export function resistanceToDegreesF(resistance: number): number {
 	const [lower, upper] = bounds(resistance, resistances)
 	const lowerDegrees = conversionTable[lower]
 	const upperDegrees = conversionTable[upper]
@@ -19,5 +19,3 @@ export function resistanceToDegreesF(resistance: number): number{
 	const degreesC = map(resistance, lower, upper, lowerDegrees['f'], upperDegrees['f'])
 	return degreesC;
 }
-console.log(resistanceToDegreesF(15852))
-console.log(resistanceToDegreesC(15852))
