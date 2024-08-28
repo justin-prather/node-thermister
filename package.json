@@ -1,9 +1,14 @@
 {
   "name": "node-thermister",
   "module": "index.ts",
-  "exports": {
-    ".": "./index.js"
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run build.mjs"
   },
+  "types": "dist/index.d.ts",
   "type": "module",
   "devDependencies": {
     "bun-types": "latest"
