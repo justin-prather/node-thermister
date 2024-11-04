@@ -1,6 +1,7 @@
 import { bounds } from './src/bounds';
 import { conversionTable, resistances } from './src/type2_10k_conversion';
 import { map } from './src/map';
+export { map } from './src/map';
 
 /**
  * Given a resistance reading from a thermister, returns the corresponding
