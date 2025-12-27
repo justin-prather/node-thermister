@@ -1,17 +1,15 @@
 {
   "name": "node-thermister",
+  "main": "index.ts",
+  "types": "index.ts",
   "module": "index.ts",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "bun run build.mjs"
-  },
-  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "index.ts",
+    "src/**/*.ts"
+  ],
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/node": "^20.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
